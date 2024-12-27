@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Roboto-Black;
+  src: url('../public/font/Roboto/Roboto-Regular.ttf');
+}
+
+body {
+  font-family: Roboto-Black;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -220,6 +228,13 @@
     width: 90%; 
     padding: 15px 0;
     font-size: 18px; 
+    text-align: center;
+    align-items: center;
+  }
+
+  .item-button {
+    text-align: center;
+    align-items: center;
   }
 
   ul {

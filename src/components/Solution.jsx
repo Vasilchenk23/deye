@@ -12,7 +12,9 @@ export const Solution = () => {
                     </ul>
                     <br />
                     <br />
-                    <button className="btn-primary">Докладнiше</button>
+                    <nav className="item-button">
+                        <button className="btn-primary">Докладнiше</button>
+                    </nav>
                 </div>
                 <div className="image-company-deye">
                     <img className="deye-company" src="./images/deye.png" alt="deye" />
