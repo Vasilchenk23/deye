@@ -2,7 +2,10 @@ import "./App.css";
 import { Carousel } from "./components/Carousel";
 import { Solution } from "./components/Solution";
 import { Main } from "./components/Main";
+import { Goals } from "./components/Goals";
+import { Contact } from "./components/Contact";
 import carouselData from "./data/carouselData.json"; 
+import { Footer } from "./components/Footer";
 
 const slides = carouselData.slides; 
 
@@ -12,6 +15,9 @@ function App() {
       <Main/>
       <Carousel data={slides} /> 
       <Solution/>
+      <Goals/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
