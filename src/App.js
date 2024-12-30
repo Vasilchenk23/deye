@@ -6,6 +6,7 @@ import { Goals } from "./components/Goals";
 import { Contact } from "./components/Contact";
 import carouselData from "./data/carouselData.json"; 
 import { Footer } from "./components/Footer";
+import { Goods } from "./components/Goods";
 
 const slides = carouselData.slides; 
 
@@ -16,6 +17,7 @@ function App() {
       <Carousel data={slides} /> 
       <Solution/>
       <Goals/>
+      <Goods/>
       <Contact/>
       <Footer/>
     </div>

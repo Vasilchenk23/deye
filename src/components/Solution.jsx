@@ -1,7 +1,7 @@
 export const Solution = () => {
     return(
         <>
-            <main className="block-deye">
+            <main className="block-deye" id="solution">
                 <div className="goal-deye">
                     <h1>ПЕРЕВАГИ ВИКОРИСТАННЯ IНВЕНТОРIВ DEYE</h1>
                     <ul>

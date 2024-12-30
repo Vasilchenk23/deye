@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "SUN-30K-SG01HP3-EU-BM3",
+      "price": 60000,
+      "status": "В наявності",
+      "image": "./images/inventer.png"
+    },
+    {
+      "id": 2,
+      "name": "SUN-50K-SG01HP3-EU-BM3",
+      "price": 65000,
+      "status": "На замовлення",
+      "image": "./images/inventer.png"
+    },
+    {
+      "id": 3,
+      "name": "SUN-30K-SG01HP3-EU-BM3",
+      "price": 60000,
+      "status": "В наявності",
+      "image": "./images/inventer.png"
+    }
+  ]
+  

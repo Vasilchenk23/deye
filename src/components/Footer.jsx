@@ -7,11 +7,6 @@ export const Footer = () => {
         <div className="footer-logo">
           <h2>Deye in Ukraine</h2>
           <p>Здійснюємо поставки в Україні із врахуванням ПДВ</p>
-          <div className="footer-social">
-            <a href="#" className="social-icon">📘</a>
-            <a href="#" className="social-icon">📞</a>
-            <a href="#" className="social-icon">📧</a>
-          </div>
         </div>
 
         <div className="footer-contacts">

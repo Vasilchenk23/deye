@@ -30,12 +30,19 @@ body {
 }
 
 .header {
+  position: sticky; /* Закрепляет элемент */
+  top: 0; /* Расстояние от верхнего края окна */
+  z-index: 1000; /* Приоритет отображения поверх других элементов */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень появляется при прокрутке */
 }
 
 .logo-item img {
@@ -64,11 +71,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header {
+    position: sticky;
+    top: env(safe-area-inset-top, 0); 
+    height: 100px; 
+  }
   .item-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 100px;
     right: 0;
     background-color: #fff;
     width: 100%;
@@ -321,6 +333,65 @@ body {
 .highlighted {
   background-color: #f9f9f9;
 }
+
+#goods {
+  text-align: center;
+}
+
+.goods-container {
+  padding: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box; 
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.buy-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 20px;            
+    padding: 0 10px;      
+  }
+  .product-card {
+    width: 100%;
+    max-width: 320px;     
+    margin: 0 auto;       
+  }
+}
+
+
 
 
 .contact-container {
