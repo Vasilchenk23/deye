@@ -6,7 +6,6 @@
 body {
   font-family: Roboto-Black;
   margin: 0;
-  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -30,9 +29,9 @@ body {
 }
 
 .header {
-  position: sticky; /* Закрепляет элемент */
-  top: 0; /* Расстояние от верхнего края окна */
-  z-index: 1000; /* Приоритет отображения поверх других элементов */
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +41,7 @@ body {
 }
 
 .header.scrolled {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень появляется при прокрутке */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .logo-item img {
@@ -191,7 +190,7 @@ body {
 
 .goal-deye {
   text-align: left; 
-  padding: 20px;
+  
 }
 
 .goal-deye h1 {

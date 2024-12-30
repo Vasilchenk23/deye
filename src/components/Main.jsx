@@ -17,12 +17,12 @@ export const Main = () => {
 
   return (
     <>
-      <header className="header" id='header'>
-        <div className="logo-item">
+      <header className="header">
+        <div className="logo-item" id='mai'>
           <img src="./images/logo.png" alt="Logo" />
         </div>
         <div className={`item-menu ${menuOpen ? "menu-open" : ""}`}>
-          <h1 onClick={() => scrollToSection('header')}>Головна</h1>
+          <h1>Головна</h1>
           <h1 onClick={() => scrollToSection('solution')}>Рiшення</h1>
           <h1 onClick={() => scrollToSection('goods')}>Продукцiя</h1>
           <h1 onClick={() => scrollToSection('contact')}>Контакти</h1>
